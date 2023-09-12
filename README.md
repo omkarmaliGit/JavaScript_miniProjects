@@ -11,7 +11,7 @@ Explore a variety of JavaScript mini projects in this repository. Each project c
 - Calculator - Create a basic calculator that performs arithmetic operations.
 - Login and Registration - Implement user authentication with a simple login and registration system.
 - Countdown Timer - Develop a countdown timer that can be customized for different events.
-
+-
 <h2>Learning and Growth</h2>
 As I continue to add more clone projects to this repository, I document my progress and insights gained throughout the development process. Each project represents a stepping stone in my journey as a web developer, demonstrating my commitment to continuous learning and improvement.
 
