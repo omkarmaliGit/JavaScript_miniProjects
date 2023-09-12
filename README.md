@@ -7,8 +7,11 @@ JavaScript is one of the most popular programming languages, and it plays a cruc
 <h2>Projects</h2>
 Explore a variety of JavaScript mini projects in this repository. Each project comes with its own folder, containing detailed documentation and code samples. Here's a glimpse of what you'll find:
 
+- Weather App: Build a weather application that fetches real-time weather data based on user input.
+- ✍ I am learning web development.
 - 🌎 I am from Pune, India. 
 - ✍ I am learning web development.
+- 🌎 I am from Pune, India. 
 
 Weather App: Build a weather application that fetches real-time weather data based on user input.
 To-Do List App: Create a simple to-do list application with features like adding, deleting, and marking tasks as complete.
