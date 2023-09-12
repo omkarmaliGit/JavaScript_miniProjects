@@ -6,11 +6,11 @@ JavaScript is one of the most popular programming languages, and it plays a cruc
 
 <h2>Projects</h2>
 Explore a variety of JavaScript mini projects in this repository. Each project comes with its own folder, containing detailed documentation and code samples. Here's a glimpse of what you'll find:
-- Weather App - Build a weather application that fetches real-time weather data based on user input.
-- To-Do List App - Create a simple to-do list application with features like adding, deleting, and marking tasks as complete.
-- Calculator - Create a basic calculator that performs arithmetic operations.
-- Login and Registration - Implement user authentication with a simple login and registration system.
-* Countdown Timer - Develop a countdown timer that can be customized for different events.
+- Weather App: Build a weather application that fetches real-time weather data based on user input.
+- To-Do List App: Create a simple to-do list application with features like adding, deleting, and marking tasks as complete.
+- Calculator: Create a basic calculator that performs arithmetic operations.
+Login and Registration: Implement user authentication with a simple login and registration system.
+Countdown Timer: Develop a countdown timer that can be customized for different events.
 
 <h2>Learning and Growth</h2>
 As I continue to add more clone projects to this repository, I document my progress and insights gained throughout the development process. Each project represents a stepping stone in my journey as a web developer, demonstrating my commitment to continuous learning and improvement.
