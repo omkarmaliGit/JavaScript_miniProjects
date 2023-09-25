@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherApp.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">weather.app</div>
+      <div class="mainWeather">
+        <div class="temp">26°</div>
+        <div>
+          <div class="place">London</div>
+          <div class="timeDate">10:36 - Tuesday, 22 Oct 2019</div>
+        </div>
+        <div class="condition">
+          <img src="" alt="ICON" class="icon" />
+          <p class="status">Sunny</p>
+        </div>
+      </div>
+      <div class="sidePannel">
+        <input
+          type="text"
+          placeholder="Another location"
+          class="searchInput"
+          id="searchInput"
+        />
+        <button class="searchBtn" id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <div class="subPannel">
+          <div class="locationDetails">
+            <h3>Location Details</h3>
+            <ul>
+              <li>
+                <p>Region</p>
+                <p id="region">-</p>
+              </li>
+              <li>
+                <p>Country</p>
+                <p id="country">-</p>
+              </li>
+              <li>
+                <p>Latitude</p>
+                <p id="latitude">-</p>
+              </li>
+              <li>
+                <p>Longitude</p>
+                <p id="longitude">-</p>
+              </li>
+            </ul>
+          </div>
+          <div class="weatherDetails">
+            <h3>Weather Details</h3>
+            <ul>
+              <li>
+                <p>Wind Speed</p>
+                <p id="windspeed">-</p>
+              </li>
+              <li>
+                <p>Wind Direction</p>
+                <p id="winddirection">-</p>
+              </li>
+              <li>
+                <p>Humidity</p>
+                <p id="humidity">-</p>
+              </li>
+              <li>
+                <p>Cloud</p>
+                <p id="cloud">-</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="weatherApp.js"></script>
+</html>

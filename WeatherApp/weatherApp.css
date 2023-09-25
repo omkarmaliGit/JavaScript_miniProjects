@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.container {
+  /* background: url(Resources/clear.jpeg); */
+  background: #333;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.heading {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+}
+
+.mainWeather {
+  position: absolute;
+  bottom: 120px;
+  left: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp {
+  font-size: 100px;
+  font-weight: 500;
+  margin-right: 30px;
+}
+
+.place {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.condition {
+  margin-left: 30px;
+}
+
+.icon {
+  /* width: 50px; */
+  height: 54px;
+}
+
+.status {
+  padding-left: 5px;
+}
+
+.sidePannel {
+  width: 30%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+
+  position: absolute;
+  right: 0;
+
+  padding-inline: 50px;
+}
+
+.searchBtn {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 75px;
+  height: 80px;
+
+  border: none;
+  outline: none;
+  background-color: #a9cee1;
+}
+
+.searchBtn i {
+  color: black;
+  font-size: 24px;
+}
+
+.searchInput {
+  width: 76%;
+  height: 40px;
+  font-size: 16px;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.locationDetails,
+.weatherDetails {
+  padding-block: 25px;
+  border-bottom: 1px solid white;
+}
+
+h3 {
+  padding-block: 20px;
+}
+
+ul li {
+  list-style: none;
+  padding-block: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
