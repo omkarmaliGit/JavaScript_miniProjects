@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="todoList.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todoList">
+        <div class="heading">
+          <img src="Resources/icon.png" alt="" />
+          <div>
+            <h1>To Do List</h1>
+            <h4>hey, Good morning</h4>
+          </div>
+        </div>
+        <div class="list">
+          <ul class="ulList">
+            <li>
+              Full stack Java classes
+              <span> <i class="fa-solid fa-circle-xmark"></i></span>
+            </li>
+            <li>
+              Full stack Java classes
+              <span> <i class="fa-solid fa-circle-xmark"></i></span>
+            </li>
+            <li>
+              Full stack Java classes
+              <span> <i class="fa-solid fa-circle-xmark"></i></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="sidePannel">
+        <div class="dateDay">
+          <p class="date">06</p>
+          <p class="monthYear">Feb 2017</p>
+          <p class="day">Monday</p>
+        </div>
+        <button class="addSignDiv" onclick="openPopup()">+</button>
+      </div>
+      <div class="addToList" id="addToList">
+        <p class="addtime">12:33</p>
+        <input type="text" class="input" placeholder="add your task" />
+        <button class="inputBtn" onclick="closePopup()">ADD</button>
+      </div>
+    </div>
+  </body>
+  <script src="todoList.js"></script>
+</html>
