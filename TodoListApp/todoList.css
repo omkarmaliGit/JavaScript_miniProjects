@@ -33,7 +33,7 @@ body {
   height: 70vh;
 
   margin-left: 21%;
-  padding: 40px;
+  padding: 40px 30px 40px 40px;
 
   border-radius: 10px;
 
@@ -47,7 +47,7 @@ body {
   border-bottom: 1px solid var(--primary-color);
 
   padding-bottom: 15px;
-  margin-bottom: 15px;
+  /* margin-bottom: 5px; */
 
   display: flex;
   align-items: center;
@@ -61,37 +61,66 @@ body {
   text-align: center;
 }
 
-.todoList {
-  overflow: auto;
+.ulList {
+  height: 50vh;
+  overflow-y: scroll;
 }
 
 .list ul li {
-  display: flex;
   font-size: 20px;
-  margin-block: 25px;
+  margin-block: 24px;
 
   display: flex;
   align-items: center;
+
+  position: relative;
+
+  padding-right: 50px;
+
+  user-select: none;
 }
 
-.list ul li > i {
+.list ul li i {
+  position: absolute;
+  right: 0%;
   font-size: 30px;
   margin-right: 30px;
-}
-
-.list ul li span {
-  font-size: 30px;
-
-  position: absolute;
-  right: 33%;
-
-  margin-right: 10px;
+  color: var(--secondary-color);
+  cursor: pointer;
 }
 
 li::before {
-  content: "\f015";
+  content: "\f111";
   font-family: FontAwesome;
+  font-size: 25px;
   margin-right: 20px;
+  color: var(--light-mode);
+  border: 4px solid var(--secondary-color);
+  border-radius: 50%;
+}
+
+.list ul li.checked {
+  color: green;
+  /* text-decoration: line-through; */
+}
+
+.list ul li.checked::before {
+  content: "\f058";
+  font-family: FontAwesome;
+  font-size: 32.5px;
+  margin-right: 20px;
+  /* color: var(--primary-color);
+   */
+  color: green;
+  border: none;
+  border-radius: none;
+  /* text-decoration: none; */
+  /* margin-right: 20px; */
+}
+
+.list ul li i:hover {
+  /* color: var(--primary-color);*/
+  color: red;
 }
 
 .sidePannel {

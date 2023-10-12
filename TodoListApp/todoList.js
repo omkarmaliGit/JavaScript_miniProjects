@@ -5,35 +5,61 @@ const day = document.querySelector(".day");
 const addtime = document.querySelector(".addtime");
 
 const input = document.querySelector(".input");
-const task = document.querySelector(".task");
+// const task = document.querySelector(".task");
 const ulList = document.querySelector(".ulList");
 
 function addTask() {
   if (input.value == "") {
     alert("Please write task before adding.");
   } else {
-    const task = document.createElement("li");
-    // let newDate = new Date();
-    task.innerText = input.value;
-    ulList.appendChild(task);
+    const litask = document.createElement("li");
 
-    const spani = document.createElement("span");
-    task.appendChild(spani);
+    let liveTime = new Date();
+
+    litask.innerText =
+      liveTime.getHours() + ":" + liveTime.getMinutes() + "  -  " + input.value;
+    ulList.appendChild(litask);
+
+    // const spani = document.createElement("span");
+    // litask.appendChild(spani);
 
     const xmark = document.createElement("i");
-    unchecked.classList.add("fa-solid", "fa-circle-xmark");
-    spani.appendChild(xmark);
+    xmark.setAttribute("class", "fa-regular fa-trash-can");
+    litask.appendChild(xmark);
   }
   input.value = "";
+  saveData();
 }
+
+ulList.addEventListener(
+  "click",
+  function (e) {
+    if (e.target.tagName === "LI") {
+      e.target.classList.toggle("checked");
+      saveData();
+    } else if (e.target.tagName === "I") {
+      e.target.parentElement.remove();
+      saveData();
+    }
+  },
+  false
+);
+
+function saveData() {
+  localStorage.setItem("listdata", ulList.innerHTML);
+}
+function showData() {
+  ulList.innerHTML = localStorage.getItem("listdata");
+}
+showData();
 
 function openPopup() {
   addToList.classList.add("openAddToList");
 }
 
 function closePopup() {
-  addTask();
   addToList.classList.remove("openAddToList");
+  addTask();
 }
 
 let newDate = new Date();
